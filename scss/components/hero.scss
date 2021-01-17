@@ -1,0 +1,54 @@
+.hero{
+    margin-top:16rem;
+}
+.hero__block{
+    display: block;
+}
+.hero__description-text{
+    font-size: 4.8rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+    color:$white;
+    display: inline-block;
+    line-height: 8rem;
+    & span{
+        font-weight: 600;
+    }
+
+
+    
+    &:after{
+        content: "";
+        background-color: white;
+        width: 2.6rem;
+        height: 0.3rem;
+        transform: rotateZ(45deg);
+        top:50%;
+        left:calc(100% + 1rem);
+        position: absolute;
+        transition: 0.2s ease;
+    }
+    &:before{
+        content: "";
+        background-color: white;
+        width: 2.6rem;
+        height: 0.3rem;
+        transform: rotateZ(-45deg);
+        top:50%;
+        left:calc(100% + 2.7rem);
+        transition: 0.2s ease;
+        position: absolute;
+    }
+    &--active{
+        &:after{
+            transform: rotateZ(-45deg);
+            transition: 0.2s ease;
+
+        }
+        &:before{
+            transform: rotateZ(45deg);
+            transition: 0.2s ease;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.header{
+    padding-top: 137px;
+}
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__logo-img{
+    width: 55px;
+}
+.header__img{
+    width: 100%;
+    height: 100%;
+}
+.header__logo-text{
+    margin-left: 2.7rem;
+    color: $white;
+    font-family: "Montserrat";
+    font-size: 3.4rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    & span{
+        margin-left: 0.2em;
+        font-weight: 400;
+    }
+}
+

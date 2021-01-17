@@ -1,0 +1,51 @@
+.toglle-item{
+    overflow: hidden;
+    
+}
+.toglle-item__list{
+    display: none;
+    position: relative;
+    list-style: none;  
+    padding:2rem;
+    border-radius: 0.5rem;
+    background-color: $white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    z-index: 99;
+    
+
+    &--active{
+        display: inline-block;
+        transition: 0.2s ease;
+    }
+    &:after{
+            content: ''; 
+            position: absolute; /* Абсолютное позиционирование */
+            bottom:100%;
+            left:20%; /* Положение треугольника */
+            border: 10px solid transparent; /* Прозрачные границы */
+            border-bottom: 10px solid $white; /* Добавляем треугольник */
+    }
+
+    & li{
+         
+        color:$blue;
+        font-size: 4rem;
+
+        &:hover{
+            color:darken($blue,20%);
+        }
+    }
+    
+}
+.unselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -khtml-user-select: none;    /* Konqueror */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;  
+}
+.cursor-p{
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.card-one__row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+}
+.card-one__item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-gap: 3rem;
+    color:$black;
+    padding:8rem 10rem;
+    background-color: $white;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.1);
+    border-radius: $border-r;
+}
+.card-one__title{
+    font-size: 3rem;
+}
+.card-one__description{
+    font-size: 1.8rem;
+}
+.card-one__img{
+    width: 100%;
+    height:100%;
+ 
+
+    & img{
+        width: 90%;
+        height:90%;
+        display: block;
+        margin:2rem auto;
+        object-fit: cover;
+        
+    }
+}
+
+.card-one__text{
+
+}
